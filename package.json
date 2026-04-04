@@ -1,0 +1,19 @@
+{
+  "name": "github-app-workflow-run-webhook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fflate": "^0.8.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260320.0",
+    "typescript": "^5.8.3",
+    "wrangler": "^4.10.0"
+  }
+}
