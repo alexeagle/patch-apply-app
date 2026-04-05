@@ -38,6 +38,15 @@ npm run dev
 npm run deploy
 ```
 
+## Automatic deploys with GitHub Actions
+
+This repo includes a workflow at `.github/workflows/deploy-worker.yml` that deploys on every push to `main` (and supports manual runs via `workflow_dispatch`).
+
+Add these GitHub repository secrets:
+
+- `CLOUDFLARE_API_TOKEN` (token with Worker deploy permissions)
+- `CLOUDFLARE_ACCOUNT_ID` (your Cloudflare account ID)
+
 ## GitHub App configuration
 
 In your GitHub App settings:
